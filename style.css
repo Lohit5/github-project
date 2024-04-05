@@ -1,0 +1,461 @@
+:root {
+  --lm-bg: #141d2f;
+  --im-body-bg: #f6f8ff;
+  --lm-bg-content: #fefefe;
+  --lm-text: #4b6a9b;
+  --lm-text-alt: #2b3442;
+  --lm-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.2);
+  --lm-shadow-inactive: 0px 16px 30px -10px rgba(0, 0, 0, 0.2);
+  --lm-icon-bg: brightness(100%);
+  --btn: #0079ff;
+  --btn-hover: #60abff;
+}
+
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  background-color: var(--lm-bg);
+  display: flex;
+  width: 100%;
+  position: relative;
+  height: 100vh;
+  color: var(--lm-bg-content);
+  justify-content: center;
+}
+
+.userinput {
+  margin-top: 15px;
+  background-color: #1e2a47;
+  width: 700px;
+  height: 70px;
+  position: relative;
+  border-radius: 15px;
+  box-shadow: var(--lm-shadow);
+  border: none;
+  color: white;
+  font-size: large;
+  outline: none;
+}
+
+input::placeholder {
+  position: absolute;
+  font-size: 17px;
+  word-spacing: 5px;
+  font-family: "Reddit Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+
+
+
+.no-result {
+  position: absolute;
+  bottom: 10px;
+  right: 70px;
+  font-weight: 900;
+  word-spacing: 7px;
+
+}
+
+
+#changeicon {
+  display: flex;
+  cursor: pointer;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+
+
+
+.inputtag {
+  position: relative;
+}
+
+
+.darklist {
+  background-color: var(--lm-bg);
+}
+
+.bodybg {
+  background-color: var(--im-body-bg);
+}
+
+#form-container {
+  position: relative;
+}
+
+
+
+
+
+
+input[value] {
+  padding-left: 50px;
+}
+
+
+
+
+
+#maintag {
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
+
+
+input[type='search']::-webkit-search-cancel-button {
+  right: 250px;
+  position: absolute;
+}
+
+::placeholder {
+  color: white;
+}
+
+.btn {
+  position: absolute;
+  background-color: var(--btn);
+  right: 20px;
+  width: 110px;
+  padding: 18px 25px 18px 25px;
+  margin-top: 25px;
+  cursor: pointer;
+  border-radius: 10px;
+  border: none;
+  color: var(--lm-bg-content);
+  font-weight: bold;
+
+}
+
+.btn:hover {
+  background-color: var(--btn-hover);
+  transition: all 0.5s;
+}
+
+
+
+
+.firsttag {
+  display: flex;
+  justify-content: space-between;
+
+
+}
+
+.headtag {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 28px;
+
+}
+
+.text-section {
+  display: flex;
+  flex-direction: column;
+  width: 68%;
+  gap: 15px;
+  padding: 10px;
+  margin-top: 15px;
+
+}
+
+.details-section {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.followers {
+  
+  display: flex;
+  flex-direction: column;
+  margin: 6px;
+  font-weight: 500;
+}
+
+.text-icon {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+}
+
+.error {
+  position: absolute;
+  color: red;
+  font-weight: bold;
+  right: 100px;
+  font-size: 20px;
+  left: 70px;
+  bottom: 15px;
+  row-gap: 10px;
+  z-index: 1;
+}
+
+.namesection a {
+  color: #0079ff;
+  margin-top: 5px;
+}
+
+.data-name{
+  font-family: "Azeret Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-size: 24px;
+  font-style: normal;
+}
+
+.urlsection {
+  margin-top: 8px;
+  font-size: 15px;
+  font-family: "Azeret Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+
+
+
+
+.srcimage {
+  position: absolute;
+  left: 10px;
+  top: 40px;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+.imagestyle {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+}
+
+#data-bio {
+  font-size: 15px;
+  font-family: "Reddit Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 25px;
+  color: darkgrey;
+  
+}
+
+.herosection {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 35px;
+  box-shadow: var(--lm-shadow);
+  width: 700px;
+  height: 700px;
+  background-color: #1e2a47;
+  border-radius: 15px;
+  color: white;
+}
+
+
+
+
+
+.sectionimage {
+  width: 25%;
+  padding: 10px;
+  margin-top: 15px;
+}
+
+.numberdatasection{
+  font-family: "Reddit Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 25px;
+  font-weight: bold;
+  
+}
+
+.follow {
+  display: flex;
+  background-color: var(--lm-bg);
+  border-radius: 10px;
+  line-height: 30px;
+  padding: 18px;
+  justify-content: space-evenly;
+  margin-top: 10px;
+  
+
+}
+
+.bottomsection{
+  font-family: "Reddit Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+
+
+
+.data-year {
+  font-size: 15px;
+  font-family: "Reddit Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* .maptwittersection{
+  line-height: 30px;
+} */
+
+#mapsection {
+  display: flex;
+  column-gap: 15px;
+  font-size: 15px;
+  width: 200px;
+  margin-top: 18px;
+  object-fit: cover;
+}
+
+.pickcolor{
+  color: red;
+}
+
+#mapsection a {
+  color: white;
+
+}
+
+#mapsection p {
+  width: 193px;
+}
+
+.icon-section {
+  display: flex;
+  justify-content: space-evenly;
+  line-height: 30px;
+
+}
+
+
+
+
+.followsection{
+  font-size: 15px;
+  font-family: "Reddit Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.lightlist {
+  background-color: var(--lm-icon-bg);
+  color: var(--lm-text);
+
+  .userinput {
+    color: var(--lm-text);
+  }
+
+  input::placeholder {
+    color: var(--lm-text);
+  }
+
+  .data-name {
+    font-family: "Azeret Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    color: var(--lm-text-alt);
+  }
+  .numberdatasection{
+    font-family: "Reddit Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--lm-text-alt)
+  }
+
+  
+
+  #mapsection img {
+    background-size: cover;
+    color: blueviolet;
+    filter: brightness(50%);
+
+  }
+
+  #mapsection a {
+    color: var(--lm-text);
+  }
+
+}
+
+
+@media screen and (max-width: 767px)  {
+  .userinput {
+    width: 403px;
+  }
+
+  .herosection {
+    width: 403px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+  }
+
+  .follow {
+    display: flex;
+
+
+  }
+
+  .details-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .imagestyle {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+  }
+
+  .icon-section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  .sectionimage {
+    align-items: center;
+  }
+  
+
+}
+
+/* .describesection {
+  margin-top: 10px;
+} */
