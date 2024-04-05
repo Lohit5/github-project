@@ -162,4 +162,3 @@ function Renderdata(data) {
 }
 
 
-// icon.innerText == "LIGHT" ? darkmode() : Lightmode();
